@@ -65,4 +65,4 @@ export class BorrarAllAction implements Action {
 
 
 
-export type Acciones = AgregarTodoAction | ToggleTodoAction | EditarTodoAction | BorrarTodoAction | ToggleAllTodoAction | BorrarSeleccionadosAction;
+export type Acciones = AgregarTodoAction | ToggleTodoAction | EditarTodoAction | BorrarTodoAction | ToggleAllTodoAction | BorrarAllAction;

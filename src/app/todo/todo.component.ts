@@ -11,7 +11,7 @@ import { AppState } from '../app.reducers';
 })
 export class TodoComponent implements OnInit {
   
-  completado: false;
+  completado: boolean;
 
   constructor(private store: Store<AppState>) { }
 
@@ -20,7 +20,7 @@ export class TodoComponent implements OnInit {
 
   toggleAll(){
     this.completado = !this.completado;
-    
+
     const accion = new ToggleAllTodoAction(this.completado);
     this.store.dispatch(accion);
     /* console.log(this.completado); */
